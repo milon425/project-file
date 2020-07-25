@@ -1,0 +1,47 @@
+.menu-btnn{
+	position: fixed;
+	right: 0;
+	z-index: 99;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.overlay{
+	width: 100%;
+	padding: 85px 0;
+	background-color: #fbc531;
+	opacity: 0;
+	transform: translateX(100%);
+	transition: all ease 0.5s;
+}
+
+.overlay ul li{
+	display: inline-block;
+	width: 100%;
+}
+
+.overlay ul li a{
+	display: block;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	font-size: 28px;
+	padding: 25px 0;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all ease 1s;
+}
+.overlay ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+input[type="checkbox"]:checked ~ .overlay{
+	opacity: 1;
+	transform: scale(1) translateX(0px);
+}
